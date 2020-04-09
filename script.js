@@ -21,7 +21,6 @@ function winnerpleyr(p){
   modal.classList.add("winner");
   modal.appendChild(player);
   replay.appendChild(document.createTextNode("Replay"));
-  // replay.setAttribute("onclick","rep();");
   replay.onclick = function() { rep() };
   modal.appendChild(replay);
   document.body.appendChild(modal);
@@ -53,7 +52,6 @@ function draw(){
 
 function rep(){
   const w = document.querySelector(".winner");
-  // cards.forEach(card => card.classList = "card");
   firstPlayer = [];
   secondPlayer = [];
   count = 0;
